@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    background: rgb(2, 71, 8);
+}
+
 .container{
     width: 100%;
     max-width: 500px;
     margin: 40px auto;
     text-align: center;
     padding: 20px;
-    background: chartreuse;
+    background: rgba(2, 221, 68, 0.979);
 }
 
 h1{
@@ -35,6 +39,20 @@ button{
     padding: 5px 20px;
     font-size: 15px;
     background: #fff;
+    border: solid 1px #000;
+}
+
+.cash{
+    margin: 10px 0;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    border: solid 1px #000;
+}
+
+th,td{
     border: solid 1px #000;
 }
 
