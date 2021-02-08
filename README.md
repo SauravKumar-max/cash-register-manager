@@ -1,1 +1,2 @@
-# cash-register-manager
+# Cash Register Manager
+### 
