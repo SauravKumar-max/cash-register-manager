@@ -6,15 +6,17 @@
 
 body{
     background: rgb(2, 71, 8);
+    color: #2e2a2a;
 }
 
 .container{
     width: 100%;
     max-width: 500px;
-    margin: 40px auto;
+    margin: 50px auto;
     text-align: center;
     padding: 20px;
     background: rgba(2, 221, 68, 0.979);
+    border-radius: 10px;
 }
 
 h1{
