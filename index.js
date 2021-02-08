@@ -13,13 +13,22 @@ function changeCash(){
         notesNum[i].innerHTML = " ";
     }
 
+    if(totalChange == 0){
+        alert("You don't need to return any changes!");
+    }
+
+    if(totalChange < 0){
+        alert("Cash is less than bill, please enter right amount!");
+    }
+
     if(totalChange >= 2000){
         notes = Math.floor(totalChange / 2000);
         notesNum[1].innerHTML = notes;
         let remain = totalChange % 2000;
         totalChange = remain;
     }
-     if(totalChange >= 500){
+
+    if(totalChange >= 500){
         notes = Math.floor(totalChange / 500);
         notesNum[2].innerHTML = notes;
         let remain = totalChange % 500;
@@ -60,7 +69,6 @@ function changeCash(){
         let remain = totalChange % 1;
         totalChange = remain;
     }
-
 }
 
 checkBtn.addEventListener('click', changeCash);
